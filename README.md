@@ -1,4 +1,4 @@
-# PHP Laravel & Vue (Batch-4)
+# ES MERN 2403
 
 # All Module
 
@@ -6,9 +6,9 @@
 | :------------------------ | :-------------------------------- | :-----------: |
 | 1. [Class - 2](class-2)   | Homework-1                        |     Figma     |
 | 2. [Class - 3](class-3)   | Homework-2                        |     Figma     |
-| 3. [Class - 4](class-4)   | Problem Solving in PHP...         |      02       |
-| 4. [Class - 5](class-5)   | Problem Solving in PHP...         |      03       |
-| 5. [Class - 6](class-6)   | EXAM WEEK (Assignment + LiveTest) |    02 + 02    |
+| 3. [Class - 4](class-4)   | Homework-3                        |     Figma     |
+| 4. [Class - 5](class-5)   | Homework-4                        |     HTML      |
+| 5. [Class - 6](class-6)   | Homework-5                        |     HTML      |
 | 6. [Class - 7](class-7)   | Problem Solving in PHP...         |      02       |
 | 7. [Class - 12](class-2)  | Problem Solving in PHP...         |      04       |
 | 8. [Class - 13](class-2)  | Problem Solving in PHP...         |      03       |
