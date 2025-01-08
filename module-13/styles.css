@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column; /* কলাম আকারে সাজানো */
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 1; /* সমান আকারের কলাম */
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.big {
+  flex: 2; /* বড় কলাম */
+}
+
+.small {
+  flex: 0.5; /* ছোট কলাম */
+}
+
+.small-columns .column {
+  flex: 0 0 auto; /* ছোট কলামগুলো স্বয়ংক্রিয়ভাবে আকার নেবে */
+  width: 20%; /* প্রতিটি কলামের প্রস্থ 20% */
+}
