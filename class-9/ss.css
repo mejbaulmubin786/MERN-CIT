@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.col {
+  width: 25%;
+  height: 250px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 5px;
+  background-color: rgb(19, 206, 231);
+  color: white;
+}
+
+/* Bangladesh */
+.green {
+  height: 80%;
+  background: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.red {
+  width: 40%;
+  height: 60%;
+  background: red;
+  border-radius: 50%;
+}
+
+/* Japan */
+.white {
+  height: 80%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* India */
+.india {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.india-1 {
+  height: 33%;
+  background: orange;
+}
+.india-2 {
+  height: 33%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.india-3 {
+  height: 33%;
+  background: green;
+}
+.ashoka-chakra {
+  width: 30px;
+  height: 30px;
+  border: 2px solid blue;
+  border-radius: 50%;
+}
+
+/* France */
+.france {
+  height: 80%;
+  display: flex;
+}
+.france-1 {
+  width: 33%;
+  background: blue;
+}
+.france-2 {
+  width: 33%;
+  background: white;
+}
+.france-3 {
+  width: 33%;
+  background: red;
+}
+
+/* Germany */
+.germany {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.germany-1 {
+  height: 33%;
+  background: black;
+}
+.germany-2 {
+  height: 33%;
+  background: red;
+}
+.germany-3 {
+  height: 33%;
+  background: yellow;
+}
+
+/* Italy */
+.italy {
+  height: 80%;
+  display: flex;
+}
+.italy-1 {
+  width: 33%;
+  background: green;
+}
+.italy-2 {
+  width: 33%;
+  background: white;
+}
+.italy-3 {
+  width: 33%;
+  background: red;
+}
+
+/* United Kingdom */
+.uk {
+  height: 80%;
+  background: url("https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg");
+  background-size: cover;
+}
+
+/* United States */
+.us {
+  height: 80%;
+  background: #fff;
+  position: relative;
+}
+.us-stripes {
+  background: repeating-linear-gradient(
+    red 0%,
+    red 7.69%,
+    white 7.69%,
+    white 15.38%
+  );
+  height: 100%;
+}
+.us-stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 50%;
+  background: blue;
+}
+
+/* Russia */
+.russia {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.russia-1 {
+  height: 33%;
+  background: white;
+}
+.russia-2 {
+  height: 33%;
+  background: blue;
+}
+.russia-3 {
+  height: 33%;
+  background: red;
+}

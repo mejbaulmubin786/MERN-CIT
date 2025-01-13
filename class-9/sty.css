@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.col {
+  width: 25%;
+  height: 250px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 5px;
+  background-color: rgb(19, 206, 231);
+  color: white;
+}
+
+.green,
+.white,
+.india,
+.france,
+.germany,
+.italy {
+  height: 80%;
+  border: 1px solid #000;
+}
+
+.red {
+  width: 40%;
+  height: 60%;
+  background: red;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.white {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.india {
+  display: flex;
+  flex-direction: column;
+}
+
+.india-1 {
+  height: 33%;
+  background: orange;
+}
+
+.india-2 {
+  height: 33%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.india-3 {
+  height: 33%;
+  background: green;
+}
+
+.ashoka-chakra {
+  width: 30px;
+  height: 30px;
+  border: 2px solid blue;
+  border-radius: 50%;
+}
+
+.france {
+  display: flex;
+}
+
+.france-1,
+.france-2,
+.france-3 {
+  width: 33.33%;
+  height: 100%;
+}
+
+.france-1 {
+  background: blue;
+}
+
+.france-2 {
+  background: white;
+}
+
+.france-3 {
+  background: red;
+}
+
+.germany {
+  display: flex;
+  flex-direction: column;
+}
+
+.germany-1,
+.germany-2,
+.germany-3 {
+  height: 33%;
+  width: 100%;
+}
+
+.germany-1 {
+  background: black;
+}
+
+.germany-2 {
+  background: red;
+}
+
+.germany-3 {
+  background: yellow;
+}
+
+.italy {
+  display: flex;
+}
+
+.italy-1,
+.italy-2,
+.italy-3 {
+  width: 33.33%;
+  height: 100%;
+}
+
+.italy-1 {
+  background: green;
+}
+
+.italy-2 {
+  background: white;
+}
+
+.italy-3 {
+  background: red;
+}
+
+.bahamas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bahamas {
+  position: relative;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Bahamas Colors */
+.blue {
+  background: #00a3e0;
+  height: 33%;
+}
+
+.yellow {
+  background: #ffd100;
+  height: 34%;
+}
+
+.triangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 50% solid transparent;
+  border-bottom: 50% solid transparent;
+  border-right: 25% solid black; /* ডান দিকে প্রসারিত কালো ত্রিভুজ */
+}
+
+.bahamas {
+  position: relative;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #000; /* পতাকার চারপাশে বর্ডার */
+}
+
+.blue {
+  background: #00a3e0; /* Bahamas এর নীল রং */
+  height: 33.33%; /* নীল অংশের উচ্চতা */
+}
+
+.yellow {
+  background: #ffd100; /* Bahamas এর হলুদ রং */
+  height: 33.33%; /* হলুদ অংশের উচ্চতা */
+}
+
+.triangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 50% solid transparent; /* উপরের অংশ ট্রান্সপারেন্ট */
+  border-bottom: 50% solid transparent; /* নিচের অংশ ট্রান্সপারেন্ট */
+  border-right: 25% solid black; /* ডান দিকে প্রসারিত কালো ত্রিভুজ */
+}

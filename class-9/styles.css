@@ -1,5 +1,5 @@
 div {
-  border: 1px solid blue;
+  border: 1px solid rgb(0, 0, 12);
 }
 
 .row {
@@ -28,9 +28,12 @@ h1 {
   align-items: center;
   justify-content: center;
 }
+.bj:hover {
+  background: white;
+}
 
 .red {
-  width: 60%;
+  width: 40%;
   height: 60%;
   border-radius: 50%;
   background: red;
@@ -43,4 +46,40 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.conf {
+  height: 80%;
+  border: none;
+}
+
+.armenia-1 {
+  height: 34%;
+  background: red;
+  border: none;
+}
+.armenia-2 {
+  height: 33%;
+  background: rgb(17, 0, 255);
+  border: none;
+}
+.armenia-3 {
+  height: 33%;
+  background: rgb(212, 193, 22);
+  border: none;
+}
+
+.austria-1 {
+  height: 34%;
+  background: #ff0000;
+  border: none;
+}
+.austria-2 {
+  height: 33%;
+  background: rgb(214, 213, 219);
+  border: none;
+}
+.austria-3 {
+  height: 33%;
+  background: #ff0000;
+  border: none;
 }
