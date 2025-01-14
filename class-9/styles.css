@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  transition: 2s;
 }
 
 .container {
@@ -259,12 +260,12 @@
 }
 
 .card:hover .mad {
-  background-color: rgb(233, 54, 9); /* Change background color on hover */
+  background-color: rgb(10, 4, 3); /* Change background color on hover */
   display: block;
 }
 
 .card:hover .h-mad::after {
-  content: "Lithunia"; /* Display new text */
+  content: "Yemen"; /* Display new text */
   position: absolute;
   top: 10px;
   left: 50%;
@@ -273,20 +274,12 @@
 }
 
 .card:hover .mad-1 {
-  background-color: rgb(236, 240, 6); /* Change background color on hover */
+  background-color: rgb(240, 41, 6); /* Change background color on hover */
   width: 100%;
   height: 35%;
 }
 .card:hover .mad-2 {
-  background-color: rgb(4, 241, 63); /* Change background color on hover */
+  background-color: rgb(223, 238, 227); /* Change background color on hover */
   width: 100%;
   height: 35%;
-}
-
-.card:hover .mon-3 {
-  background-color: rgb(225, 241, 4); /* Change background color on hover */
-  width: 100%;
-  height: 50%;
-  position: relative;
-  top: 0px;
 }
