@@ -10,11 +10,13 @@
   margin: auto;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .card {
   width: 20%;
   height: 30%;
+  margin-left: 20px;
   position: relative;
   text-align: center;
 }
@@ -33,7 +35,12 @@
   margin: auto;
 }
 
-h1 {
+.h-bg,
+.h-ger,
+.h-den,
+.h-lux,
+.h-mon,
+.h-mad {
   color: white;
   height: 20%;
   text-align: center;
@@ -44,7 +51,7 @@ h1 {
   background-color: white; /* Change background color on hover */
 }
 
-.card:hover h1::after {
+.card:hover .h-bg::after {
   content: "Japan"; /* Display new text */
   position: absolute;
   top: 10px;
@@ -55,4 +62,231 @@ h1 {
 
 .card:hover h1 {
   color: transparent; /* Hide original text */
+}
+.ger {
+  height: 80%;
+  background-color: rgb(243, 227, 6);
+}
+
+.ger-1 {
+  width: 100%;
+  height: 33%;
+  background-color: rgb(5, 5, 0);
+}
+
+.ger-2 {
+  width: 100%;
+  height: 33%;
+  background-color: #ff0000;
+}
+
+.card:hover .h-ger::after {
+  content: "Lithuania"; /* Display new text */
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(255, 251, 251);
+}
+
+.card:hover .ger {
+  background-color: rgb(223, 22, 22); /* Change background color on hover */
+}
+
+.card:hover .ger-1 {
+  background-color: rgb(243, 228, 14); /* Change background color on hover */
+}
+
+.card:hover .ger-2 {
+  background-color: green; /* Change background color on hover */
+}
+
+.den {
+  width: 100%;
+  height: 80%;
+  background-color: #ff0000;
+  display: flex;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.den-1 {
+  width: 20px;
+  height: 100%;
+  background-color: aliceblue;
+  position: absolute;
+  left: 30%;
+}
+
+.den-2 {
+  width: 100%;
+  height: 20px;
+  background-color: aliceblue;
+  position: absolute;
+}
+
+.card:hover .h-den::after {
+  content: "Changed"; /* Display new text */
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(255, 251, 251);
+}
+
+.lux {
+  width: 100%;
+  height: 80%;
+  background-color: cornflowerblue;
+
+  position: relative;
+
+  align-items: center;
+}
+
+.lux-1 {
+  width: 100%;
+  height: 33%;
+  background-color: rgb(240, 46, 12);
+}
+
+.lux-2 {
+  width: 100%;
+  height: 33%;
+  background-color: #f5f2f2;
+}
+
+.card:hover .lux {
+  background-color: rgb(223, 22, 22); /* Change background color on hover */
+  display: flex;
+}
+
+.card:hover .h-lux::after {
+  content: "Mali"; /* Display new text */
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(255, 251, 251);
+}
+.card:hover .lux-1 {
+  background-color: green; /* Change background color on hover */
+  width: 33%;
+  height: 100%;
+}
+.card:hover .lux-2 {
+  background-color: rgb(243, 228, 14); /* Change background color on hover */
+  width: 33%;
+  height: 100%;
+}
+
+/*---------------------------*/
+.mon {
+  width: 100%;
+  height: 80%;
+  background-color: cornflowerblue;
+
+  position: relative;
+
+  align-items: center;
+}
+
+.mon-1 {
+  width: 100%;
+  height: 50%;
+  background-color: rgb(240, 46, 12);
+}
+
+.mon-2 {
+  width: 100%;
+  height: 50%;
+  background-color: #f5f2f2;
+}
+
+.card:hover .mon {
+  background-color: rgb(223, 22, 22); /* Change background color on hover */
+  display: flex;
+}
+
+.card:hover .h-mon::after {
+  content: "Benin"; /* Display new text */
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(255, 251, 251);
+}
+.card:hover .mon-1 {
+  background-color: green; /* Change background color on hover */
+  width: 40%;
+  height: 100%;
+}
+.card:hover .mon-2 {
+  background-color: rgb(241, 19, 4); /* Change background color on hover */
+  width: 60%;
+  height: 100%;
+  position: relative;
+  top: 0px;
+}
+
+.card:hover .mon-3 {
+  background-color: rgb(225, 241, 4); /* Change background color on hover */
+  width: 100%;
+  height: 50%;
+  position: relative;
+  top: 0px;
+}
+
+/*---------------------------*/
+.mad {
+  width: 100%;
+  height: 80%;
+  background-color: rgb(9, 165, 22);
+  display: flex;
+}
+
+.mad-1 {
+  width: 40%;
+  height: 100%;
+  background-color: rgb(241, 229, 227);
+}
+
+.mad-2 {
+  width: 100%;
+  height: 50%;
+  background-color: #ec2910;
+}
+
+.card:hover .mad {
+  background-color: rgb(233, 54, 9); /* Change background color on hover */
+  display: block;
+}
+
+.card:hover .h-mad::after {
+  content: "Lithunia"; /* Display new text */
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(255, 251, 251);
+}
+
+.card:hover .mad-1 {
+  background-color: rgb(236, 240, 6); /* Change background color on hover */
+  width: 100%;
+  height: 35%;
+}
+.card:hover .mad-2 {
+  background-color: rgb(4, 241, 63); /* Change background color on hover */
+  width: 100%;
+  height: 35%;
+}
+
+.card:hover .mon-3 {
+  background-color: rgb(225, 241, 4); /* Change background color on hover */
+  width: 100%;
+  height: 50%;
+  position: relative;
+  top: 0px;
 }
