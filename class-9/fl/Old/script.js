@@ -1,4 +1,3 @@
-/*
 // Select all cards
 const cards = document.querySelectorAll(".card");
 
@@ -15,4 +14,3 @@ cards.forEach((card) => {
     heading.textContent = "Bangladesh"; // Change text back to Bangladesh
   });
 });
-*/

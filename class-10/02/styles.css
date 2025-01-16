@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.one {
+  width: 100%;
+  height: 100vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+h1 {
+  color: white;
+  font-size: 3rem;
+  animation: heading 10s forwards;
+}
+
+@keyframes heading {
+  from {
+    letter-spacing: 0;
+    filter: blur(0);
+  }
+  to {
+    letter-spacing: 60px;
+    filter: blur(40px);
+    opacity: 0;
+  }
+}
