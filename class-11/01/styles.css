@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 2rem;
+}
+.one {
+  width: 100%;
+  height: 100vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.two {
+  animation: two 1s;
+}
+
+.four {
+  animation: four 1s;
+}

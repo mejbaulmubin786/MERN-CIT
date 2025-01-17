@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 2rem;
+}
+
+.one {
+  width: 100%;
+  height: 100vh;
+  background: black;
+  position: relative; /* Parent element হিসেবে relative রাখতে হবে */
+}
+
+.two {
+  position: absolute;
+  /* আলাদা অবস্থানে রাখার জন্য মান পরিবর্তন করুন */
+  transform: translate(-50%, -50%);
+  animation: two 1s forwards;
+}
+
+.three {
+  position: absolute;
+  top: 40%;
+  left: 50%; /* মাঝামাঝি */
+  transform: translate(-50%, -50%);
+}
+
+.four {
+  position: absolute;
+  /* top: 92%;
+  left: 60%; */
+  transform: translate(-50%, -50%);
+  animation: four 1s forwards;
+}
+
+@keyframes two {
+  from {
+    top: 8%;
+    left: 30%;
+  }
+  to {
+    top: 40%;
+    left: 30%;
+  }
+}
+
+@keyframes four {
+  from {
+    top: 92%;
+    left: 60%;
+  }
+  to {
+    top: 40%;
+    left: 60%;
+  }
+}
