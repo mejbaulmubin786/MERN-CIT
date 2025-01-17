@@ -21,9 +21,9 @@
 
 .three {
   position: absolute;
-  top: 40%;
-  left: 50%; /* মাঝামাঝি */
+
   transform: translate(-50%, -50%);
+  animation: three 1s forwards;
 }
 
 .four {
@@ -42,6 +42,19 @@
   to {
     top: 40%;
     left: 30%;
+  }
+}
+
+@keyframes three {
+  from {
+    scale: 0;
+    top: 40%;
+    left: 50%;
+  }
+  to {
+    scale: 1;
+    top: 40%;
+    left: 50%;
   }
 }
 
