@@ -12,5 +12,6 @@
 | 6. [Class - 7](class-7)    | Homework-6  |      CSS      |
 | 7. [Class - 8](class-8)    | Homework-7  |   CSS-flex    |
 | 8. [Class - 9](class-9)    | Homework-8  |   Animation   |
-| 9. [Class - 10](class-10)  | Homework-9  |   Animation   |
-| 10. [Class - 11](class-11) | Homework-10 |   Animation   |
+| 9. [Class - 10](class-10)  | N/H         |   Animation   |
+| 10. [Class - 11](class-11) | N/H         |   Animation   |
+| 11. [Class - 12](class-12) | Homework-10 |   Animation   |
