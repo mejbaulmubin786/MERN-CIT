@@ -12,6 +12,17 @@ a {
   color: black;
 }
 
-li:hover a {
-  color: blue;
+li {
+  position: relative;
+}
+
+li::after {
+  width: 100%;
+  height: 1px;
+
+  background-color: red;
+  position: absolute;
+  top: -2px;
+  left: 0;
+  content: "";
 }
