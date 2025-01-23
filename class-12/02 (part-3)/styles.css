@@ -1,0 +1,17 @@
+.one {
+  list-style: none;
+  display: flex;
+  column-gap: 15px;
+  justify-content: center;
+  font-size: large;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li:hover a {
+  color: blue;
+}
