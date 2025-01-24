@@ -3,16 +3,6 @@
   padding: 0;
 }
 /* common css start */
-
-a {
-  text-decoration: none;
-}
-
-ul,
-ol {
-  list-style: none;
-}
-
 .container {
   width: 1410px;
   margin: 0 auto;
@@ -21,6 +11,33 @@ ol {
 .box {
   display: flex;
   align-items: center;
+}
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+.common-button {
+  margin: 0 400px;
+}
+.common-button a {
+  padding: 14px 28px;
+  background-color: #8454f5;
+  border-radius: 18px;
+  font-family: "Open Sans", serif;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  border: 1px solid transparent;
+}
+
+.common-button a:hover {
+  background-color: transparent;
+  color: #8454f5;
+  border-color: #8454f5;
 }
 /* common css End */
 
@@ -93,7 +110,7 @@ nav .button-part a:hover {
 
 .banner {
   background-color: #f8fdfe;
-  padding: 400px 0px;
+  padding: 100px 0px;
   position: relative;
 }
 
@@ -124,4 +141,22 @@ nav .button-part a:hover {
   position: absolute;
   top: 100px;
   right: 0;
+}
+
+.banner h1 {
+  width: 464px;
+  font-size: 64px;
+  font-weight: 900;
+  color: #1d354f;
+  font-family: "Open Sans", serif;
+  margin: 0 auto;
+}
+
+.banner p {
+  width: 464px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #29313d;
+  font-family: "Open Sans", serif;
+  margin: 0 auto;
 }
