@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(./img/marsumilae-e9kPHCJCHM8-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ulOne {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.ulOne li {
+  position: relative;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.ulOne > li > a,
+.ulOne > li {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+}
+
+.ulOne > li:hover {
+  color: #f39c12;
+}
+
+.liTwo:hover .ulTwo,
+.liThree:hover .ulThree {
+  opacity: 1;
+  visibility: visible;
+}
+
+.ulTwo,
+.ulThree {
+  position: absolute;
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0.9);
+  margin-top: 10px;
+  padding: 10px 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.ulTwo li,
+.ulThree li {
+  padding: 8px 20px;
+  white-space: nowrap;
+}
+
+.ulTwo li:hover,
+.ulThree li:hover {
+  background-color: #f39c12;
+  color: #fff;
+}
+
+.ulTwo {
+  top: 110%;
+  left: 0;
+}
+
+.ulThree {
+  top: 0;
+  left: 100%;
+}
