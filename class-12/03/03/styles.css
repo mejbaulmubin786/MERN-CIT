@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(./img/marsumilae-e9kPHCJCHM8-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ulOne {
+  display: flex;
+  column-gap: 50px;
+  justify-content: center;
+  list-style: none;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  align-items: center;
+  box-shadow: 0px 4px 6px;
+  padding: 10px 0;
+}
+
+.liTwo {
+  position: relative;
+}
+
+.ulTwo {
+  list-style: none;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  opacity: 0;
+  transition: 0.3s;
+  visibility: hidden;
+}
+
+.liTwo:hover .ulTwo {
+  opacity: 1;
+  visibility: visible;
+}
