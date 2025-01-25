@@ -135,17 +135,54 @@ nav .button-part a:hover {
 }
 
 .banner .bannerLeft {
+  width: 513px;
+  height: 475px;
   position: absolute;
   top: 195px;
   left: 5%;
 }
 
+.banner .bannerLeft img {
+  position: absolute;
+  z-index: 2;
+}
+
+.banner .bannerLeft div {
+  width: 220px;
+  height: 380px;
+  background-color: #e5f5d0;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
 .banner .bannerRight {
+  width: 655px;
+  height: 587px;
   position: absolute;
   top: 203px;
   right: 147px;
 }
+.banner .bannerRight img {
+  position: absolute;
+}
+.banner .bannerRight .hor {
+  width: 250px;
+  height: 480px;
+  position: absolute;
+  top: 87px;
+  left: 385px;
+  background-color: #dee9ec;
+}
 
+.banner .bannerRight .lay {
+  width: 585px;
+  height: 183px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #dee9ec;
+}
 .banner h1 {
   width: 464px;
   font-size: 64px;
