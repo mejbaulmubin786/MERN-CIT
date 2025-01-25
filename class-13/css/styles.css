@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* common css start */
+.container {
+  width: 1410px;
+  margin: 0 auto;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+.common-button {
+  margin: 50px 559px 472px 387px;
+  position: relative;
+  z-index: 9999;
+}
+.common-button a {
+  padding: 14px 28px;
+  background-color: #8454f5;
+  border-radius: 18px;
+  font-family: "Open Sans", serif;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  transition: 0.4s;
+  border: 1px solid transparent;
+}
+
+.common-button a:hover {
+  background-color: transparent;
+  color: #8454f5;
+  border-color: #8454f5;
+}
+/* common css End */
+
+/*================================
+  Navbar part start
+  ================================*/
+
+nav {
+  background-color: #f4fdff99;
+  padding: 30px 0;
+}
+.logo-part {
+  width: 20%;
+}
+
+.menu-part {
+  width: 60%;
+}
+
+.button-part {
+  width: 20%;
+  text-align: right;
+}
+
+nav .menu-part ul {
+  display: flex;
+  column-gap: 48px;
+  justify-content: center;
+}
+
+nav .menu-part ul li a {
+  font-family: "Open Sans", serif;
+  font-size: 18px;
+  color: #29313d;
+  font-weight: 600;
+  transition: 0.4s;
+}
+
+nav .menu-part ul li:hover a {
+  color: #8454f5;
+}
+
+nav .menu-part ul li a i {
+  margin-left: 3px;
+}
+
+nav .button-part a {
+  padding: 14px 28px;
+  background-color: #8454f5;
+  border-radius: 18px;
+  font-family: "Open Sans", serif;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  transition: 0.4;
+  border: 1px solid transparent;
+}
+
+nav .button-part a:hover {
+  background-color: transparent;
+  color: #8454f5;
+  border-color: #8454f5;
+}
+/*================================
+  Navbar part End
+  ================================*/
+
+/*--==============================================
+  Banner part start
+==================================================*/
+
+.banner {
+  background-color: #f8fdfe;
+  padding: 100px 0px;
+  position: relative;
+}
+
+.banner .bannerMask {
+  width: 100%;
+  position: absolute;
+  top: -20px;
+  left: -80px;
+}
+.banner .bannerMask img {
+  width: 100%;
+}
+
+.banner .bannerTop {
+  position: absolute;
+  top: 140px;
+  left: 614px;
+}
+
+.banner .bannerLeft {
+  position: absolute;
+  top: 195px;
+  left: 5%;
+}
+
+.banner .bannerRight {
+  position: absolute;
+  top: 203px;
+  right: 147px;
+}
+
+.banner h1 {
+  width: 464px;
+  font-size: 64px;
+  font-weight: 900;
+  color: #1d354f;
+  font-family: "Open Sans", serif;
+  margin: 140px 559px 0 387px;
+}
+
+.banner p {
+  width: 464px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #29313d;
+  font-family: "Open Sans", serif;
+  margin: 10px 559px 0 387px;
+  padding-top: 20px 60px;
+}
+
+/*-------------my code-------------------*/
