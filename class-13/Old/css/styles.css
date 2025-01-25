@@ -21,7 +21,7 @@ ol {
   list-style: none;
 }
 .common-button {
-  margin: 0 400px;
+  margin: 20px 400px;
 }
 .common-button a {
   padding: 14px 28px;
@@ -31,6 +31,7 @@ ol {
   color: white;
   font-weight: 600;
   font-size: 18px;
+  transition: 0.4s;
   border: 1px solid transparent;
 }
 
@@ -92,6 +93,7 @@ nav .button-part a {
   color: white;
   font-weight: 600;
   font-size: 18px;
+  transition: 0.4;
   border: 1px solid transparent;
 }
 
@@ -117,7 +119,7 @@ nav .button-part a:hover {
 .banner .bannerMask {
   width: 100%;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 0;
   transform: translateY(-50%);
 }
@@ -128,13 +130,13 @@ nav .button-part a:hover {
 .banner .bannerTop {
   position: absolute;
   top: 20px;
-  left: 36%;
+  left: 30%;
 }
 
 .banner .bannerLeft {
   position: absolute;
   top: 100px;
-  left: 0;
+  left: 5%;
 }
 
 .banner .bannerRight {
@@ -149,7 +151,7 @@ nav .button-part a:hover {
   font-weight: 900;
   color: #1d354f;
   font-family: "Open Sans", serif;
-  margin: 0 auto;
+  margin: 0 400px;
 }
 
 .banner p {
@@ -158,5 +160,8 @@ nav .button-part a:hover {
   font-weight: 400;
   color: #29313d;
   font-family: "Open Sans", serif;
-  margin: 0 auto;
+  margin: 0 400px;
+  padding-top: 20px 60px;
 }
+
+/*-------------my code-------------------*/
