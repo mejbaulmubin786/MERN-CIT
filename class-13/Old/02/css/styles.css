@@ -2,20 +2,6 @@
   margin: 0;
   padding: 0;
 }
-body {
-  background-color: #f4fdff99;
-}
-main {
-  background-image: url(../img/bannerMask.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-header {
-  width: 1920px;
-  height: 910px;
-  margin: 0 auto;
-}
 /* common css start */
 .container {
   width: 1410px;
@@ -34,10 +20,10 @@ ul,
 ol {
   list-style: none;
 }
-
-/* common css End */
 .common-button {
-  margin-top: 60px;
+  margin: 50px 559px 472px 387px;
+  position: relative;
+  z-index: 9999;
 }
 .common-button a {
   padding: 14px 28px;
@@ -47,7 +33,7 @@ ol {
   color: white;
   font-weight: 600;
   font-size: 18px;
-  transition: 0.4;
+  transition: 0.4s;
   border: 1px solid transparent;
 }
 
@@ -56,12 +42,14 @@ ol {
   color: #8454f5;
   border-color: #8454f5;
 }
+/* common css End */
 
 /*================================
   Navbar part start
   ================================*/
 
 nav {
+  background-color: #f4fdff99;
   padding: 30px 0;
 }
 .logo-part {
@@ -124,66 +112,42 @@ nav .button-part a:hover {
   Banner part start
 ==================================================*/
 
-.banner-contain {
-  width: 1840px;
-  height: 595px;
-  margin-top: 71px;
-  margin-left: auto;
-  display: flex;
+.banner {
+  background-color: #f8fdfe;
+  padding: 100px 0px;
+  position: relative;
 }
 
-.left {
+.banner .bannerMask {
+  width: 100%;
+  position: absolute;
+  top: -20px;
+  left: -80px;
+}
+.banner .bannerMask img {
+  width: 100%;
+}
+
+.banner .bannerTop {
+  position: absolute;
+  top: 13%;
+  left: 33%;
+}
+
+.banner .bannerLeft {
   width: 513px;
   height: 475px;
-  margin-left: 80px;
-  position: relative;
+  position: absolute;
+  top: 195px;
+  left: 5%;
 }
-.left img {
+
+.banner .bannerLeft img {
   position: absolute;
   z-index: 2;
 }
-.middle {
-  width: 592px;
-  height: 595px;
-  position: relative;
-  padding-left: 49px;
-}
-.right {
-  width: 655px;
-  height: 587px;
-  position: relative;
-}
 
-.right img {
-  position: absolute;
-  z-index: 2;
-}
-.middle img {
-  position: absolute;
-  left: 21px;
-  top: -50px;
-}
-
-.banner h1 {
-  width: 464px;
-  font-size: 64px;
-  font-weight: 900;
-  color: #1d354f;
-  font-family: "Open Sans", serif;
-  margin-top: 60px;
-}
-
-.middle p {
-  width: 464px;
-  font-size: 18px;
-  font-weight: 400;
-  color: #29313d;
-  font-family: "Open Sans", serif;
-
-  padding-top: 20px 60px;
-}
-
-.left-rect {
+.banner .bannerLeft div {
   width: 220px;
   height: 380px;
   background-color: #e5f5d0;
@@ -192,7 +156,18 @@ nav .button-part a:hover {
   z-index: 1;
 }
 
-.vartical {
+.banner .bannerRight {
+  width: 655px;
+  height: 587px;
+  position: absolute;
+  top: 203px;
+  right: 147px;
+}
+.banner .bannerRight img {
+  position: absolute;
+  z-index: 2;
+}
+.banner .bannerRight .vartical {
   width: 250px;
   height: 480px;
   position: absolute;
@@ -202,7 +177,7 @@ nav .button-part a:hover {
   z-index: 1;
 }
 
-.horizontal {
+.banner .bannerRight .horizontal {
   width: 585px;
   height: 183px;
   position: absolute;
@@ -211,3 +186,23 @@ nav .button-part a:hover {
   background-color: #dee9ec;
   z-index: 1;
 }
+.banner h1 {
+  width: 464px;
+  font-size: 64px;
+  font-weight: 900;
+  color: #1d354f;
+  font-family: "Open Sans", serif;
+  margin: 140px 559px 0 387px;
+}
+
+.banner p {
+  width: 464px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #29313d;
+  font-family: "Open Sans", serif;
+  margin: 10px 559px 0 387px;
+  padding-top: 20px 60px;
+}
+
+/*-------------my code-------------------*/
