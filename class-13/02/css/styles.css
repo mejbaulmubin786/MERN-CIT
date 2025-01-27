@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f4fdff99;
+  overflow: hidden;
+}
+main {
+  position: relative;
+}
+
+.background {
+  background-image: url("../img/bannerMask.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 120% 50%;
+  animation: backgroundAnimation 3s ease-in-out forwards;
+}
+/* main {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/bannerMask.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: backgroundAnimation 3s ease-in-out infinite;
+} */
+/* 
+main {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/bannerMask.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: distortedEffect 5s ease-in-out forwards;
+} */
+header {
+  width: 1920px;
+  height: 910px;
+  margin: 0 auto;
+}
+/* common css start */
+.container {
+  width: 1410px;
+  margin: 0 auto;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* common css End */
+.common-button {
+  margin-top: 60px;
+}
+.common-button a {
+  padding: 14px 28px;
+  background-color: #8454f5;
+  border-radius: 18px;
+  font-family: "Open Sans", serif;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  transition: 0.4;
+  border: 1px solid transparent;
+}
+
+.common-button a:hover {
+  background-color: transparent;
+  color: #8454f5;
+  border-color: #8454f5;
+}
+
+/*================================
+  Navbar part start
+  ================================*/
+
+nav {
+  padding: 30px 0;
+}
+.logo-part {
+  width: 20%;
+}
+
+.menu-part {
+  width: 60%;
+}
+
+.button-part {
+  width: 20%;
+  text-align: right;
+}
+
+nav .menu-part ul {
+  display: flex;
+  column-gap: 48px;
+  justify-content: center;
+}
+
+nav .menu-part ul li a {
+  font-family: "Open Sans", serif;
+  font-size: 18px;
+  color: #29313d;
+  font-weight: 600;
+  transition: 0.4s;
+}
+
+nav .menu-part ul li:hover a {
+  color: #8454f5;
+}
+
+nav .menu-part ul li a i {
+  margin-left: 3px;
+}
+
+nav .button-part a {
+  padding: 14px 28px;
+  background-color: #8454f5;
+  border-radius: 18px;
+  font-family: "Open Sans", serif;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  transition: 0.4;
+  border: 1px solid transparent;
+}
+
+nav .button-part a:hover {
+  background-color: transparent;
+  color: #8454f5;
+  border-color: #8454f5;
+}
+/*================================
+  Navbar part End
+  ================================*/
+
+/*--==============================================
+  Banner part start
+==================================================*/
+
+.banner-contain {
+  width: 1840px;
+  height: 595px;
+  margin-top: 71px;
+  margin-left: auto;
+  display: flex;
+}
+
+.left {
+  width: 513px;
+  height: 475px;
+  margin-left: 80px;
+  position: relative;
+}
+.left img {
+  position: absolute;
+  z-index: 2;
+
+  animation: right-img 3s linear forwards;
+}
+.middle {
+  width: 592px;
+  height: 595px;
+  position: relative;
+  padding-left: 49px;
+}
+.right {
+  width: 655px;
+  height: 587px;
+  position: relative;
+}
+
+.right img {
+  position: absolute;
+  z-index: 2;
+  animation: right-img 3s linear forwards;
+}
+.middle img {
+  position: absolute;
+  left: 21px;
+  top: -50px;
+}
+
+.banner h1 {
+  width: 464px;
+  font-size: 64px;
+  font-weight: 900;
+  color: #1d354f;
+  font-family: "Open Sans", serif;
+  margin-top: 60px;
+}
+
+.middle p {
+  width: 464px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #29313d;
+  font-family: "Open Sans", serif;
+
+  padding-top: 20px 60px;
+}
+
+.left-rect {
+  width: 220px;
+  height: 380px;
+  background-color: #e5f5d0;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  animation: left-rect 3s linear forwards;
+}
+
+.vartical {
+  width: 250px;
+  height: 480px;
+  position: absolute;
+  top: 87px;
+  right: 80px;
+  background-color: #dee9ec;
+  z-index: 1;
+  animation: moveBottom 3s linear forwards;
+}
+
+.horizontal {
+  width: 585px;
+  height: 183px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #dee9ec;
+  z-index: 1;
+  animation: moveLeft 3s linear forwards;
+}
+
+/* @keyframes distortedEffect {
+  0% {
+    transform: scale(1) rotate(0deg) skew(0deg, 0deg);
+    background-position: 0% 0%;
+  }
+  25% {
+    transform: scale(1.1) rotate(5deg) skew(10deg, -5deg);
+    background-position: 25% 25%;
+  }
+  50% {
+    transform: scale(0.9) rotate(-5deg) skew(-10deg, 5deg);
+    background-position: 50% 50%;
+  }
+  75% {
+    transform: scale(1.05) rotate(3deg) skew(5deg, -10deg);
+    background-position: 75% 75%;
+  }
+  100% {
+    transform: scale(1) rotate(0deg) skew(0deg, 0deg);
+    background-position: 100% 100%;
+  }
+} */
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 120% 50%; /* ডান দিকের বাইরে */
+  }
+  100% {
+    background-position: center; /* শেষ পজিশন */
+  }
+}
+/* @keyframes backgroundAnimation {
+  0% {
+    background-position: -300% -300%;
+  }
+  25% {
+    background-position: -200% -200%;
+  }
+  50% {
+    background-position: -100% -100%;
+  }
+  75% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+} */
+@keyframes left-rect {
+  0% {
+    transform: scale(0.5) rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes moveLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveBottom {
+  from {
+    transform: translateY(-30%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes right-img {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
