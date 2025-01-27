@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG Animation</title>
+  <style>
+    /* SVG কন্টেইনার স্টাইল */
+    #vector {
+      width: 300px;
+      height: 300px;
+      margin: 20px auto;
+      display: block;
+    }
+
+    /* পাথের জন্য অ্যানিমেশন */
+    #vector path {
+      fill: none;
+      stroke: #1e90ff; /* নীল রঙের স্ট্রোক */
+      stroke-width: 2;
+      stroke-dasharray: 500; /* স্ট্রোকের দৈর্ঘ্য */
+      stroke-dashoffset: 500; /* অ্যানিমেশন শুরুতে সম্পূর্ণ লুকানো */
+      animation: draw 3s linear infinite; /* অ্যানিমেশন প্রয়োগ */
+    }
+
+    /* ড্র অ্যানিমেশনের কীফ্রেম */
+    @keyframes draw {
+      to {
+        stroke-dashoffset: 0; /* সম্পূর্ণ স্ট্রোক দৃশ্যমান */
+      }
+    }
+  </style>
+</head>
+<body>
+  <svg id="vector" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <!-- একটি সার্কেল -->
+    <path d="M50 10 A40 40 0 1 1 49.9 10 Z" />
+    <!-- একটি সরলরেখা -->
+    <path d="M10 80 L90 80" />
+  </svg>
+</body>
+</html>

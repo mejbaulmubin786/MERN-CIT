@@ -33,7 +33,7 @@ body {
   top: 110%;
   left: 0;
   opacity: 0;
-  transition: 0.3s;
+  transition: 0.9s;
 }
 
 .liTwo:hover .ulTwo {

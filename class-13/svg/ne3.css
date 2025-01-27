@@ -1,0 +1,36 @@
+#vector {
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+  display: block;
+}
+
+/* স্থির অংশের স্টাইল */
+#vector path.static {
+  fill: none;
+  stroke: lightgray; /* স্থির অংশের রঙ */
+  stroke-width: 2;
+}
+
+/* অ্যানিমেটেড অংশের স্টাইল */
+#vector path.animate {
+  fill: none;
+  stroke: #1e90ff; /* অ্যানিমেটেড রঙ */
+  stroke-width: 2;
+  stroke-dasharray: 500; /* স্ট্রোক দৈর্ঘ্য */
+  stroke-dashoffset: 500; /* স্ট্রোক লুকানো */
+  animation: draw 5s cubic-bezier(0.4, 0, 0.2, 1) infinite; /* স্মুথ অ্যানিমেশন */
+}
+
+/* ড্র অ্যানিমেশনের কীফ্রেম */
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 500; /* স্ট্রোক লুকানো */
+  }
+  50% {
+    stroke-dashoffset: 0; /* স্ট্রোক দৃশ্যমান */
+  }
+  100% {
+    stroke-dashoffset: -500; /* ধীরে ধীরে লুকানো */
+  }
+}

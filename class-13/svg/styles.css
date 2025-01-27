@@ -1,0 +1,30 @@
+/* Base styles for the SVG paths */
+#vector path {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer; /* Adds a pointer cursor on hover */
+}
+
+/* Hover effect for changing stroke color and width */
+#vector path:hover {
+  stroke-width: 3; /* Increase stroke width */
+  stroke: #ff4500; /* Change the stroke color to orange */
+  opacity: 0.8; /* Slightly reduce opacity */
+}
+
+/* Animation for paths on hover */
+@keyframes hoverPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05); /* Slightly enlarge the path */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Add pulse animation when hovering over a path */
+#vector path:hover {
+  animation: hoverPulse 0.5s infinite;
+}
