@@ -1,0 +1,40 @@
+.banner {
+  position: relative;
+}
+.two {
+  position: absolute;
+  top: 0;
+}
+
+#vector {
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+  display: block;
+}
+
+/* পাথের জন্য অ্যানিমেশন */
+#vector path {
+  fill: none;
+  stroke: #1e90ff; /* নীল রঙের স্ট্রোক */
+  stroke-width: 2;
+  stroke-dasharray: 500; /* স্ট্রোকের দৈর্ঘ্য */
+  stroke-dashoffset: 500; /* অ্যানিমেশন শুরুতে সম্পূর্ণ লুকানো */
+  animation: draw 3s linear infinite; /* অ্যানিমেশন প্রয়োগ */
+}
+
+/* ড্র অ্যানিমেশনের কীফ্রেম */
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 500; /* স্ট্রোক লুকানো */
+    opacity: 0.1;
+  }
+  50% {
+    stroke-dashoffset: 0; /* স্ট্রোক দৃশ্যমান */
+    opacity: 0.1;
+  }
+  100% {
+    stroke-dashoffset: -500; /* ধীরে ধীরে আবার লুকানো */
+    opacity: 0.1;
+  }
+}

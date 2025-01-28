@@ -1,0 +1,23 @@
+.one {
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  display: flex;
+}
+
+.two {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+}
+.three {
+  width: 100px;
+  height: 100px;
+  background-color: #0ad65f;
+}
+
+.four {
+  width: 100px;
+  height: 100px;
+  background-color: #400ad6;
+}

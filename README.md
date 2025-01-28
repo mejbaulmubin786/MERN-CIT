@@ -12,9 +12,10 @@
 | 6. [Class - 7](class-7)    | Homework-6  |      CSS      |
 | 7. [Class - 8](class-8)    | Homework-7  |   CSS-flex    |
 | 8. [Class - 9](class-9)    | Homework-8  |   Animation   |
-| 9. [Class - 10](class-10)  | N/H         |   Animation   |
-| 10. [Class - 11](class-11) | N/H         |   Animation   |
+| 9. [Class - 10](class-10)  | Animation   |      N/H      |
+| 10. [Class - 11](class-11) | Animation   |      N/H      |
 | 11. [Class - 12](class-12) | Homework-10 |   Animation   |
-| 12. [Class - 13](class-13) | Homework-13 |    project    |
+| 12. [Class - 13](class-13) | Homework-13 |    Nav bar    |
+| 13. [Class - 14](class-14) | git/github  |      N/H      |
 
 সকল cit এর নোট কালেকশন [note](https://github.com/mejbaulmubin786/MyNotes/tree/main/MERN-CIT-NOTE)
