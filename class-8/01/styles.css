@@ -1,14 +1,18 @@
 .one {
-  width: 300px;
+  width: 500px;
   height: 300px;
   background-color: red;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .two {
   width: 100px;
   height: 100px;
   background-color: aqua;
+  align-self: flex-start;
 }
 .three {
   width: 100px;
@@ -20,4 +24,5 @@
   width: 100px;
   height: 100px;
   background-color: #400ad6;
+  align-self: flex-end;
 }
