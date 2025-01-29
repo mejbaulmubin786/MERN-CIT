@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.one {
+  width: 25vw;
+  height: 25vh;
+  background: rgb(17, 223, 103);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.two {
+  width: 10vw;
+  height: 15vh;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+}
+.three {
+  width: 8vw;
+  height: 15vh;
+  background-color: rgb(17, 3, 3);
+  position: absolute;
+}
