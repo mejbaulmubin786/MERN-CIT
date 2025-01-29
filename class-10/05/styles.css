@@ -15,9 +15,27 @@
 }
 
 .two {
-  align-self: flex-start;
+  animation: two 1s;
 }
 
 .four {
-  align-self: flex-end;
+  animation: four 1s;
+}
+
+@keyframes two {
+  from {
+    align-self: flex-start;
+  }
+  to {
+    align-self: center;
+  }
+}
+
+@keyframes four {
+  from {
+    align-self: flex-end;
+  }
+  to {
+    align-self: center;
+  }
 }
