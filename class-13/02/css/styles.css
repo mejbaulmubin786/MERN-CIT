@@ -4,38 +4,13 @@
 }
 body {
   background-color: #f4fdff99;
-  overflow: hidden;
 }
 main {
-  position: relative;
-}
-
-.background {
-  background-image: url("../img/bannerMask.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 120% 50%;
-  animation: backgroundAnimation 3s ease-in-out forwards;
-}
-/* main {
-  width: 100vw;
-  height: 100vh;
-  background-image: url("../img/bannerMask.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url(../img/bannerMask.png);
   background-position: center;
-  animation: backgroundAnimation 3s ease-in-out infinite;
-} */
-/* 
-main {
-  width: 100vw;
-  height: 100vh;
-  background-image: url("../img/bannerMask.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  animation: distortedEffect 5s ease-in-out forwards;
-} */
+}
 header {
   width: 1920px;
   height: 910px;
@@ -166,8 +141,6 @@ nav .button-part a:hover {
 .left img {
   position: absolute;
   z-index: 2;
-
-  animation: right-img 3s linear forwards;
 }
 .middle {
   width: 592px;
@@ -184,7 +157,6 @@ nav .button-part a:hover {
 .right img {
   position: absolute;
   z-index: 2;
-  animation: right-img 3s linear forwards;
 }
 .middle img {
   position: absolute;
@@ -218,7 +190,6 @@ nav .button-part a:hover {
   position: absolute;
   bottom: 0;
   z-index: 1;
-  animation: left-rect 3s linear forwards;
 }
 
 .vartical {
@@ -229,7 +200,6 @@ nav .button-part a:hover {
   right: 80px;
   background-color: #dee9ec;
   z-index: 1;
-  animation: moveBottom 3s linear forwards;
 }
 
 .horizontal {
@@ -240,94 +210,4 @@ nav .button-part a:hover {
   bottom: 0;
   background-color: #dee9ec;
   z-index: 1;
-  animation: moveLeft 3s linear forwards;
-}
-
-/* @keyframes distortedEffect {
-  0% {
-    transform: scale(1) rotate(0deg) skew(0deg, 0deg);
-    background-position: 0% 0%;
-  }
-  25% {
-    transform: scale(1.1) rotate(5deg) skew(10deg, -5deg);
-    background-position: 25% 25%;
-  }
-  50% {
-    transform: scale(0.9) rotate(-5deg) skew(-10deg, 5deg);
-    background-position: 50% 50%;
-  }
-  75% {
-    transform: scale(1.05) rotate(3deg) skew(5deg, -10deg);
-    background-position: 75% 75%;
-  }
-  100% {
-    transform: scale(1) rotate(0deg) skew(0deg, 0deg);
-    background-position: 100% 100%;
-  }
-} */
-@keyframes backgroundAnimation {
-  0% {
-    background-position: 120% 50%; /* ডান দিকের বাইরে */
-  }
-  100% {
-    background-position: center; /* শেষ পজিশন */
-  }
-}
-/* @keyframes backgroundAnimation {
-  0% {
-    background-position: -300% -300%;
-  }
-  25% {
-    background-position: -200% -200%;
-  }
-  50% {
-    background-position: -100% -100%;
-  }
-  75% {
-    background-position: 0% 0%;
-  }
-  100% {
-    background-position: 100% 100%;
-  }
-} */
-@keyframes left-rect {
-  0% {
-    transform: scale(0.5) rotate(0deg);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1) rotate(360deg);
-    opacity: 1;
-  }
-}
-
-@keyframes moveLeft {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-@keyframes moveBottom {
-  from {
-    transform: translateY(-30%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes right-img {
-  0% {
-    transform: scale(0.5);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
 }

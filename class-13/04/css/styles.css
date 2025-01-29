@@ -15,7 +15,7 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 120% 50%;
-  animation: backgroundAnimation 3s ease-in-out forwards;
+  animation: backgroundAnimation 3s ease-in-out infinite;
 }
 /* main {
   width: 100vw;
@@ -267,10 +267,13 @@ nav .button-part a:hover {
 } */
 @keyframes backgroundAnimation {
   0% {
-    background-position: 120% 50%; /* ডান দিকের বাইরে */
+    background-position: 200% 50%; /* ডান দিকের বাইরে */
+  }
+  50% {
+    background-position: center; /* শেষ পজিশন */
   }
   100% {
-    background-position: center; /* শেষ পজিশন */
+    background-position: 200% 50%; /* শেষ পজিশন */
   }
 }
 /* @keyframes backgroundAnimation {
@@ -330,4 +333,63 @@ nav .button-part a:hover {
     transform: scale(1);
     opacity: 1;
   }
+}
+
+/* Dropdown menu styling */
+nav .menu-part ul li {
+  position: relative;
+}
+
+nav .menu-part ul li .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: none;
+  flex-direction: column;
+  min-width: 180px;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+nav .menu-part ul li .dropdown-menu li {
+  padding: 10px 20px;
+}
+
+nav .menu-part ul li .dropdown-menu li a {
+  font-family: "Open Sans", serif;
+  font-size: 16px;
+  color: #29313d;
+  font-weight: 500;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s;
+}
+
+nav .menu-part ul li .dropdown-menu li:hover a {
+  color: #8454f5;
+}
+
+nav .menu-part ul li:hover .dropdown-menu {
+  display: flex;
+}
+
+.dropdown-menu-child {
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: none;
+  flex-direction: column;
+  min-width: 180px;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  white-space: nowrap;
 }

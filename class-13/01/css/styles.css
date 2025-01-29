@@ -5,18 +5,11 @@
 body {
   background-color: #f4fdff99;
 }
-main {
-  background-image: url(../img/bannerMask.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-header {
-  width: 1920px;
-  height: 910px;
-  margin: 0 auto;
-}
-/* common css start */
+
+/*================================
+  common css start
+  ================================*/
+
 .container {
   width: 1410px;
   margin: 0 auto;
@@ -35,7 +28,6 @@ ol {
   list-style: none;
 }
 
-/* common css End */
 .common-button {
   margin-top: 60px;
 }
@@ -47,7 +39,7 @@ ol {
   color: white;
   font-weight: 600;
   font-size: 18px;
-  transition: 0.4;
+  transition: 0.4s;
   border: 1px solid transparent;
 }
 
@@ -56,6 +48,7 @@ ol {
   color: #8454f5;
   border-color: #8454f5;
 }
+/* common css End */
 
 /*================================
   Navbar part start
@@ -63,6 +56,8 @@ ol {
 
 nav {
   padding: 30px 0;
+  position: relative;
+  z-index: 2;
 }
 .logo-part {
   width: 20%;
@@ -107,7 +102,7 @@ nav .button-part a {
   color: white;
   font-weight: 600;
   font-size: 18px;
-  transition: 0.4;
+  transition: 0.4s;
   border: 1px solid transparent;
 }
 
@@ -116,52 +111,88 @@ nav .button-part a:hover {
   color: #8454f5;
   border-color: #8454f5;
 }
+
 /*================================
-  Navbar part End
+  banner part start
   ================================*/
-
-/*--==============================================
-  Banner part start
-==================================================*/
-
-.banner-contain {
+header {
+  width: 1920px;
+  height: 910px;
+  margin: 0 auto;
+}
+#banner-box {
   width: 1840px;
   height: 595px;
   margin-top: 71px;
   margin-left: auto;
   display: flex;
+  /* background-color: red; */
 }
 
-.left {
+.hero-image-left {
   width: 513px;
   height: 475px;
   margin-left: 80px;
   position: relative;
-}
-.left img {
-  position: absolute;
+  /* background-color: #00ff55; */
   z-index: 2;
 }
-.middle {
+.hero-image-left::after {
+  content: "";
+  /* background-image: url(../img/bannerLeft.png); */
+  width: 220px;
+  height: 380px;
+  background-color: #e5f5d0;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.hero-image-left img {
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.hero-containt {
   width: 592px;
   height: 595px;
   position: relative;
   padding-left: 49px;
+  /* background-color: aqua; */
+  z-index: 2;
 }
-.right {
+.hero-image-right {
   width: 655px;
   height: 587px;
   position: relative;
+  /* background-color: #00ff55; */
+}
+.hero-image-right::after {
+  content: "";
+  width: 250px;
+  height: 480px;
+  position: absolute;
+  top: 87px;
+  right: 80px;
+  background-color: #dee9ec;
+  z-index: 1;
 }
 
-.right img {
+.hero-image-right::before {
+  content: "";
+  width: 585px;
+  height: 183px;
   position: absolute;
-  z-index: 2;
+  right: 0;
+  bottom: 0;
+  background-color: #dee9ec;
+
+  z-index: 1;
 }
-.middle img {
+.hero-image-right img {
+  z-index: 2;
   position: absolute;
-  left: 21px;
-  top: -50px;
 }
 
 .banner h1 {
@@ -173,41 +204,49 @@ nav .button-part a:hover {
   margin-top: 60px;
 }
 
-.middle p {
+.hero-containt p {
   width: 464px;
   font-size: 18px;
   font-weight: 400;
   color: #29313d;
   font-family: "Open Sans", serif;
-
   padding-top: 20px 60px;
 }
 
-.left-rect {
-  width: 220px;
-  height: 380px;
-  background-color: #e5f5d0;
+.hero-middle-img {
   position: absolute;
-  bottom: 0;
-  z-index: 1;
+  left: 21px;
+  top: -50px;
 }
 
-.vartical {
-  width: 250px;
-  height: 480px;
+/*================================
+  banner part animation start
+  ================================*/
+/* Background imegas animation*/
+
+svg {
   position: absolute;
-  top: 87px;
-  right: 80px;
-  background-color: #dee9ec;
+  width: 100%;
+  height: auto;
   z-index: 1;
 }
-
-.horizontal {
-  width: 585px;
-  height: 183px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  background-color: #dee9ec;
-  z-index: 1;
+.animated-path {
+  animation: changeColor 5s infinite ease-in-out;
+}
+@keyframes changeColor {
+  0% {
+    stroke: #6a55ea;
+  }
+  25% {
+    stroke: #55eaa4;
+  }
+  50% {
+    stroke: #eaa455;
+  }
+  75% {
+    stroke: #ea55c7;
+  }
+  100% {
+    stroke: #6a55ea;
+  }
 }

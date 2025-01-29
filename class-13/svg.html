@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVG Animation</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #121212;
+        overflow: hidden;
+      }
+      svg {
+        position: absolute;
+        width: 100%;
+        height: auto;
+      }
+      .animated-path {
+        animation: changeColor 5s infinite ease-in-out;
+      }
+      @keyframes changeColor {
+        0% {
+          stroke: #6a55ea;
+        }
+        25% {
+          stroke: #55eaa4;
+        }
+        50% {
+          stroke: #eaa455;
+        }
+        75% {
+          stroke: #ea55c7;
+        }
+        100% {
+          stroke: #6a55ea;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <svg
+      width="2005"
+      height="974"
+      viewBox="0 0 2005 974"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g id="Frame 1" clip-path="url(#clip0_1_2)">
+        <g id="vector">
+          <path
+            class="animated-path"
+            d="M3.07031 559.877C488.501 688.646 563.807 346.2 730.756 529.684C1064.33 896.273 1159.13 203.418 1318.48 379.679C1489.43 568.761 1310.63 1003.77 1606.94 795.331C1924.03 570.838 1975.21 719.778 1975.21 719.778"
+            stroke="url(#paint0_linear_1_2)"
+            stroke-width="1.0476"
+            stroke-miterlimit="10"
+          />
+          <path
+            class="animated-path"
+            d="M2.45312 594.096C497.324 738.251 584.616 327.763 748.352 513.234C1084 893.456 1180.79 209.178 1341.53 383.778C1511.61 568.562 1321.2 1032.32 1616.22 820.792C1933.31 592.2 1973.42 727.019 1973.42 727.019"
+            stroke="url(#paint1_linear_1_2)"
+            stroke-width="0.9881"
+            stroke-miterlimit="10"
+          />
+          <path
+            class="animated-path"
+            d="M1.83984 628.315C506.133 787.855 605.356 309.362 765.951 496.801C1103.49 890.802 1202.43 214.957 1364.56 387.913C1533.76 568.4 1331.76 1060.91 1625.46 846.29C1942.53 613.616 1971.59 734.296 1971.59 734.296"
+            stroke="url(#paint2_linear_1_2)"
+            stroke-width="0.9286"
+            stroke-miterlimit="10"
+          />
+          <path
+            class="animated-path"
+            d="M1.22656 662.535C514.96 837.46 626.043 290.98 783.551 480.351C1122.77 888.22 1224.05 220.753 1387.59 392.012C1555.89 568.255 1342.34 1089.45 1634.72 871.751C1951.78 634.997 1969.79 741.537 1969.79 741.537"
+            stroke="url(#paint3_linear_1_2)"
+            stroke-width="0.869"
+            stroke-miterlimit="10"
+          />
+          <path
+            class="animated-path"
+            d="M0.613281 696.772C523.769 887.082 646.657 272.615 801.15 463.936C1141.83 885.8 1245.44 226.803 1410.62 396.148C1577.79 568.346 1352.9 1118.04 1643.96 897.248C1961 656.395 1967.97 748.814 1967.97 748.814"
+            stroke="url(#paint4_linear_1_2)"
+            stroke-width="0.8095"
+            stroke-miterlimit="10"
+          />
+          <path
+            class="animated-path"
+            d="M0 730.991C532.596 936.687 667.199 254.268 818.75 447.486C1160.7 883.452 1267.23 232.455 1433.66 400.247C1600.08 568.039 1363.46 1146.59 1653.2 922.71C1970.22 677.775 1966.14 756.055 1966.14 756.055"
+            stroke="url(#paint5_linear_1_2)"
+            stroke-width="0.75"
+            stroke-miterlimit="10"
+          />
+        </g>
+      </g>
+    </svg>
+  </body>
+</html>
