@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* common css start */
+.container{
+    width: 1410px;
+    margin: 0 auto;
+}
+.box{
+    display: flex;
+    align-items: center;
+    
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+.common-button{
+    margin: 0 400px;
+}
+
+.common-button a{
+    background: #8454F5;
+    padding: 18px 28px;
+    font-family: "Nunito", serif;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 18px;
+    transition: .4s;
+    border: 1px solid transparent;
+}
+.common-button a:hover{
+    background: transparent;
+    color: #8454F5;
+    border-color: #8454F5;
+
+
+}
+/* common css end */
+
+/* =================
+Navber Part Start
+===================== */
+
+nav{
+    background: #F8FDFE;
+    padding: 30px 0px;
+}
+.logo-part{
+    width: 20%;
+    
+}
+.menu-part{
+    width: 60%;
+  
+}
+.button-part{
+    width: 20%;
+    text-align: right;
+ 
+}
+
+nav .menu-part ul{
+    display: flex;
+    column-gap: 48px;
+    justify-content: center;
+    
+}
+
+nav .menu-part ul li a{
+    
+    font-size: 18px;
+    color: #29313D;
+    font-weight: 600;
+    font-family: "Open Sans", serif;
+    transition: .4s;
+}
+
+nav .menu-part ul li:hover a{
+    color: #8454F5;
+
+}
+nav .menu-part ul li a i{
+    margin-left: 4px;
+}
+nav .button-part a{
+    background: #8454F5;
+    padding: 18px 28px;
+    font-family: "Nunito", serif;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 18px;
+    transition: .4s;
+    border: 1px solid transparent;
+}
+nav .button-part a:hover{
+    background: transparent;
+    color: #8454F5;
+    border-color: #8454F5;
+
+
+}
+/* =================
+Navber Part End 
+===================== */
+/* =================
+Banner Part start 
+===================== */
+.banner{
+    background: #F8FDFE;
+    padding: 200px 0px;
+    position: relative;
+}
+.banner .bannerMusk{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.banner .bannerMusk img{
+    width: 100%;
+    
+}
+.banner .bannerTop{
+    position: absolute;
+    top: 20px;
+    left: 30%;
+}
+.banner .bannerLeft{
+    position: absolute;
+    top: 100px;
+    left: 3%;
+}
+.banner .bannerRight{
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+
+.banner h1{
+  
+    width: 464px;
+    font-size: 64px;
+    font-weight: 900;
+    color: #1D354F;
+    font-family: "Open Sans", serif;
+    margin: 0 400px;
+}
+.banner p{
+   
+    width: 464px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #29313D;
+    font-family: "Nunito", serif;
+    margin: 0 400px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+/* =================
+Banner Part End 
+===================== */
