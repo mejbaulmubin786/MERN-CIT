@@ -72,13 +72,13 @@ nav {
   text-align: right;
 }
 
-nav .menu-part ul {
+nav .menu-part .menu {
   display: flex;
   column-gap: 48px;
   justify-content: center;
 }
 
-nav .menu-part ul li a {
+nav .menu-part .menu li a {
   font-family: "Open Sans", serif;
   font-size: 18px;
   color: #29313d;
@@ -86,11 +86,11 @@ nav .menu-part ul li a {
   transition: 0.4s;
 }
 
-nav .menu-part ul li:hover a {
+nav .menu-part .menu li:hover:not(.submenu) a {
   color: #8454f5;
 }
 
-nav .menu-part ul li a i {
+nav .menu-part .menu li a i {
   margin-left: 3px;
 }
 
@@ -111,6 +111,33 @@ nav .button-part a:hover {
   color: #8454f5;
   border-color: #8454f5;
 }
+/*---------------nav submenu-------------*/
+nav .menu-part .menu > li {
+  position: relative;
+}
+/* nav .menu-part .menu li  */
+
+.submenu {
+  background-color: rgb(245, 242, 242);
+  padding: 8px 0;
+  position: absolute;
+  top: 100%;
+  left: -50%;
+  opacity: 0;
+  transition: 1s;
+  visibility: hidden;
+  white-space: nowrap;
+}
+/* nav .menu-part .menu > */
+li:hover > .submenu {
+  opacity: 1;
+  visibility: visible;
+}
+nav .menu-part ul li ul li {
+  padding: 2px 10px;
+}
+
+/*---------------nav submenu--------*/
 
 /*================================
   banner part start
@@ -236,17 +263,22 @@ svg {
 @keyframes changeColor {
   0% {
     stroke: #6a55ea;
+    opacity: 0.3;
   }
   25% {
     stroke: #55eaa4;
+    opacity: 0.3;
   }
   50% {
     stroke: #eaa455;
+    opacity: 0.3;
   }
   75% {
     stroke: #ea55c7;
+    opacity: 0.3;
   }
   100% {
     stroke: #6a55ea;
+    opacity: 0.3;
   }
 }
