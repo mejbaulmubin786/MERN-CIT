@@ -17,5 +17,6 @@
 | 11. [Class - 12](class-12) | Homework-10 |   Animation   |
 | 12. [Class - 13](class-13) | Homework-13 |    Nav bar    |
 | 13. [Class - 14](class-14) | git/github  |      N/H      |
+| 14. [Class - 15](class-15) | Project     |   Services    |
 
 সকল cit এর নোট কালেকশন [note](https://github.com/mejbaulmubin786/MyNotes/tree/main/MERN-CIT-NOTE)
