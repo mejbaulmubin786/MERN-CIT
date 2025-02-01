@@ -60,6 +60,15 @@ ol {
   color: #29313d;
   text-align: center;
 }
+
+.common-title p {
+  font-size: 18px;
+  font-weight: 400px;
+  font-family: "Nunito", serif;
+  color: #29313d;
+  padding-bottom: 24px;
+  line-height: 200%;
+}
 /* common css End */
 
 /*================================
@@ -375,13 +384,13 @@ svg {
   padding-top: 60px;
 }
 
-.services .services-card {
+.services-card {
   width: 330px;
   background-color: #fdfdfd;
   padding: 30px 20px;
   transition: 0.4s;
 }
-.services .services-card h3 {
+.services-card h3 {
   font-size: 28px;
   font-weight: 600px;
   font-family: "Poppins", serif;
@@ -389,7 +398,7 @@ svg {
   padding-top: 24px;
   padding-bottom: 14px;
 }
-.services .services-card p {
+.services-card p {
   font-size: 18px;
   font-weight: 400px;
   font-family: "Nunito", serif;
@@ -398,7 +407,7 @@ svg {
   line-height: 200%;
 }
 
-.services .services-card a {
+.services-card a {
   font-size: 16px;
   font-weight: 400px;
   font-family: "Poppins", serif;
@@ -411,7 +420,7 @@ svg {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
-.services .services-card img {
+.services-card img {
   width: 100px;
   height: 100px;
 }
@@ -420,9 +429,11 @@ svg {
 ==================================================*/
 
 /*==============================================
-                  Launch part End
+                  Launch part start
 ==================================================*/
-
+.launch {
+  height: 860px;
+}
 .launch .left {
   width: 40%;
   position: relative;
@@ -476,6 +487,230 @@ svg {
   line-height: 200%;
   margin-top: 20px;
 }
+
+.launch .services-card {
+  width: 290px;
+}
+.launch .right .box {
+  column-gap: 30px;
+}
+
+.launch .services-card p {
+  width: 330px;
+}
 /*==============================================
                   Launch part End
 ==================================================*/
+
+/*==============================================
+                  showcase part start
+==================================================*/
+.showcase .box {
+  column-gap: 30px;
+}
+.showcase .common-title p {
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 60px;
+}
+
+.showcase .box div {
+  width: 330px;
+  height: 715px;
+  background-color: #c4c4c4;
+  border-radius: 20px;
+}
+
+.showcase .box div:first-child {
+  background-image: url(../img/showcase/dall-3.png);
+  background-size: contain;
+  background-position: center;
+  /* background-repeat: no-repeat; */
+}
+.showcase .box div:nth-child(2) {
+  background-image: url(../img/showcase/dall-2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.showcase .box div:nth-child(3) {
+  background-image: url(../img/showcase/dall-4.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.showcase .box div:last-child {
+  background-image: url(../img/showcase/dall.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*------------------------dot*/
+
+.dots {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #6a55ea;
+  opacity: 30%;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #6a55ea;
+  opacity: 100%;
+}
+
+/*==============================================
+                  showcase part End
+==================================================*/
+
+/*==============================================
+                  global part start
+==================================================*/
+.global {
+  margin-top: 120px;
+}
+.global .box {
+  justify-content: space-between;
+}
+
+.global .common-title h2 {
+  width: 529px;
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+.global .top-item {
+  display: flex;
+  justify-content: space-between;
+}
+/*==============================================
+                  global part End
+==================================================*/
+
+/* ================================================
+            trail
+===================================================*/
+.pricing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.pricing-plans {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pricing-plan {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+}
+
+.price {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+/* ================================================
+            trail End
+===================================================*/
+/* switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.switch-container {
+  display: flex;
+  justify-content: center; /* স্যুইচটিকে মাঝখানে আনার জন্য */
+  margin-bottom: 20px; /* নিচে থেকে কিছুটা জায়গা দেওয়ার জন্য */
+}
