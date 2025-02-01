@@ -52,6 +52,14 @@ ol {
   color: #8454f5;
   border-color: #8454f5;
 }
+
+.common-title h2 {
+  font-size: 48px;
+  font-weight: 600;
+  font-family: "Poppins", serif;
+  color: #29313d;
+  text-align: center;
+}
 /* common css End */
 
 /*================================
@@ -131,6 +139,7 @@ nav .menu-part .menu li:hover .sub-menu-1 {
   padding: 15px;
   box-shadow: #dee9ec;
   z-index: 999;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 nav .menu-part .menu li:hover .sub-menu-1 li {
   padding: 10px;
@@ -162,6 +171,7 @@ nav .menu-part .menu li .sub-menu-1 li:hover a {
   position: absolute;
   top: -15px;
   left: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 nav .menu-part .menu li .sub-menu-1 li:hover .sub-menu-2 li a {
@@ -353,13 +363,13 @@ svg {
 .services {
   padding: 100px 0;
 }
-.services .common-title h2 {
+/* .services .common-title h2 {
   font-size: 48px;
   font-weight: 600;
   font-family: "Poppins", serif;
   color: #29313d;
   text-align: center;
-}
+} */
 .services .box {
   column-gap: 30px;
   padding-top: 60px;
@@ -382,7 +392,7 @@ svg {
 .services .services-card p {
   font-size: 18px;
   font-weight: 400px;
-  font-family: "Poppins", serif;
+  font-family: "Nunito", serif;
   color: #29313d;
   padding-bottom: 24px;
   line-height: 200%;
@@ -398,10 +408,74 @@ svg {
 
 .services .services-card:hover {
   background-color: white;
-  -webkit-box-shadow: 0px 10px 58px -20px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 10px 58px -20px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 10px 58px -20px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.services .services-card img {
+  width: 100px;
+  height: 100px;
 }
 /*==============================================
                   services part End
+==================================================*/
+
+/*==============================================
+                  Launch part End
+==================================================*/
+
+.launch .left {
+  width: 40%;
+  position: relative;
+  /* background-color: red; */
+}
+
+.launch .right {
+  width: 60%;
+  height: 300px;
+  /* background-color: #12be46; */
+  padding-left: 60px;
+}
+
+.launch .left::before {
+  width: 540px;
+  height: 620px;
+  background-color: #eef1f6;
+  content: "";
+  position: absolute;
+  border-radius: 50px;
+  background-image: url(../img/product/product-2.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.launch .left::after {
+  width: 304px;
+  height: 620px;
+  background-color: #c4c4c4;
+  content: "";
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url(../img/product/product-1.jpg);
+  background-size: contain;
+  background-position: center;
+}
+
+.launch .common-title h2 {
+  text-align: left;
+  width: 672px;
+}
+.launch .common-title p {
+  width: 443px;
+  font-size: 18px;
+  font-weight: 400px;
+  font-family: "Nunito", serif;
+  color: #29313d;
+  padding-bottom: 24px;
+  line-height: 200%;
+  margin-top: 20px;
+}
+/*==============================================
+                  Launch part End
 ==================================================*/
