@@ -71,6 +71,14 @@ ol {
   line-height: 200%;
   text-align: center;
 }
+
+.common-title h3 {
+  font-size: 28px;
+  font-weight: 600px;
+  font-family: "Poppins", serif;
+  color: #29313d;
+}
+
 /* common css End */
 
 /*================================
@@ -79,7 +87,6 @@ ol {
 
 nav {
   padding: 30px 0;
-  position: relative;
 }
 nav .box {
   align-items: center;
@@ -393,20 +400,13 @@ svg {
   transition: 0.4s;
 }
 .services-card h3 {
-  font-size: 28px;
-  font-weight: 600px;
-  font-family: "Poppins", serif;
-  color: #29313d;
   padding-top: 24px;
   padding-bottom: 14px;
 }
 .services-card p {
-  font-size: 18px;
-  font-weight: 400px;
-  font-family: "Nunito", serif;
-  color: #29313d;
   padding-bottom: 24px;
   line-height: 200%;
+  text-align: left;
 }
 
 .services-card a {
@@ -734,7 +734,7 @@ svg {
   margin: 48px 28px 48px 28px;
 }
 .pricing-table .pricing-card ul li {
-  width: 360px;
+  width: 394px;
   height: 36px;
   margin-bottom: 16px;
   font-size: 18px;
@@ -742,57 +742,134 @@ svg {
   font-family: "Nunito", serif;
   display: flex;
   align-items: center;
+  padding: 0, 24px, 0;
 }
-
+.pricing-table .pricing-card ul li img {
+  margin-right: 10px;
+}
 /*==============================================
                   trail part End
 ==================================================*/
 /*==============================================
                   recent part start
 ==================================================*/
+.recent-posts-container {
+  display: flex;
+}
+
 .recent .box {
   column-gap: 48px;
   margin-top: 388px;
 }
 
-.recent-post,
-.follow-us {
-  padding-top: 120px;
+.recent main .box {
+  column-gap: 30px;
+  margin-top: 0;
 }
-.recent .recent-post {
-  width: 912px;
-  height: 849px;
-  background-color: red;
-}
-.recent .recent-post .recent-posts-container .recent-post {
-  padding-top: 0;
-  margin-top: 68px;
+.recent .common-title {
+  width: 64%;
 }
 .recent .follow-us {
-  width: 450px;
-  height: 684px;
-  background-color: rgb(0, 38, 255);
+  width: 32%;
+  display: flex;
+  justify-content: space-between;
 }
-
+.recent .follow-us .common-title {
+  display: flex;
+  align-items: center;
+}
 .recent .common-title h2 {
   text-align: left;
 }
-.recent .recent-post .recent-posts-container .recent-post {
+
+.recent main .common-title h3:not(.common-title div h3) {
+  font-size: 36px;
+}
+.recent .follow-us .images {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   column-gap: 30px;
 }
-.recent .recent-post .recent-posts-container .recent-post .common-title h2 {
-  width: 552px;
-  font-size: 36px;
-  color: #29313d;
-  text-align: left;
+.fb,
+.in,
+.you {
+  width: 64px;
+  height: 64px;
+  background-color: #6a55ea;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.recent-posts-container .recent-post-image img {
+.recent .follow-us .images .in,
+.recent .follow-us .images .you {
+  background-color: rgba(106, 85, 234, 0.1);
+}
+
+.recent main {
+  background-color: #fdfdfd;
+}
+
+.recent main .recent-post-image {
+  display: flex;
+}
+
+.recent main .recent-post-image img {
   width: 330px;
   height: 342px;
   border-radius: 40px;
 }
+.recent-posts .post:first-child {
+  margin-bottom: 30px;
+}
+.post .common-title h3:not(.common-title div h3) {
+  width: 552px;
+  margin-bottom: 24px;
+}
+.post-img {
+  display: flex;
+}
+.post-img img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+}
+
+.recent-posts .common-title h3,
+.recent-posts .common-title p {
+  padding-bottom: 0px;
+}
+
+.common-title div p {
+  text-align: left;
+}
+.post-img img {
+  margin-right: 18px;
+}
+
+.post-text {
+  margin-top: 28px;
+}
+
+.sidebar {
+  width: 36%;
+  height: 549px;
+  background-color: red;
+}
+
+.article-header {
+  margin-bottom: 68px;
+}
+/*-==============================================
+                  recent part End
+==================================================-*/
+/*==============================================
+                  recent part start
+==================================================*/
+
 /*-==============================================
                   recent part End
 ==================================================-*/
