@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   background-color: white;
@@ -68,6 +69,7 @@ ol {
   color: #29313d;
   padding-bottom: 24px;
   line-height: 200%;
+  text-align: center;
 }
 /* common css End */
 
@@ -482,6 +484,7 @@ svg {
   font-size: 18px;
   font-weight: 400px;
   font-family: "Nunito", serif;
+  text-align: left;
   color: #29313d;
   padding-bottom: 24px;
   line-height: 200%;
@@ -579,10 +582,24 @@ svg {
 .global {
   margin-top: 120px;
 }
+
+.global .container {
+  margin-bottom: 140px;
+}
 .global .box {
   justify-content: space-between;
+  align-items: center;
 }
+.global .box div {
+  width: 210px;
+  height: 110px;
 
+  background-color: #f3f7fd;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .global .common-title h2 {
   width: 529px;
   text-align: left;
@@ -596,121 +613,186 @@ svg {
 /*==============================================
                   global part End
 ==================================================*/
-
-/* ================================================
-            trail
-===================================================*/
-.pricing-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px;
-}
-
-.pricing-header {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.pricing-plans {
-  display: flex;
-  justify-content: space-around;
-}
-
-.pricing-plan {
-  border: 1px solid #ccc;
-  padding: 20px;
-  text-align: center;
-  background-color: white;
-}
-
-.price {
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
-button {
-  background-color: #4caf50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  margin-bottom: 10px;
-}
-/* ================================================
-            trail End
-===================================================*/
-/* switch */
-.switch {
+/*==============================================
+                  trail part start
+==================================================*/
+.trail .container {
   position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
+}
+.trail .header {
+  background-color: #f4fdfe;
+  padding-top: 120px;
+  padding-bottom: 388px;
+}
+/* .trail .common-title h2 {
+} */
+.trail .common-title p {
+  margin-top: 24px;
+}
+/*toggle-container*/
+.toggle-container {
+  position: relative;
+  width: 96px;
+  height: 28px;
+  margin: auto;
 }
 
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+.toggle-input {
+  display: none;
 }
 
-.slider {
-  position: absolute;
+.toggle-label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #dcd6f7;
+  border-radius: 50px;
+  position: relative;
   cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  transition: background 0.3s ease;
 }
 
-.slider:before {
-  position: absolute;
+.toggle-label::after {
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-input:checked + .slider {
-  background-color: #2196f3;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
+  width: 48px;
+  height: 48px;
+  background: #6a5acd;
   border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+  transition: left 0.3s ease, background 0.3s ease;
 }
 
-.switch-container {
-  display: flex;
-  justify-content: center; /* স্যুইচটিকে মাঝখানে আনার জন্য */
-  margin-bottom: 20px; /* নিচে থেকে কিছুটা জায়গা দেওয়ার জন্য */
+.toggle-input:checked + .toggle-label {
+  background: #e5e0fc;
 }
+
+.toggle-input:checked + .toggle-label::after {
+  left: 50px;
+  background: #5636c6;
+}
+/*toggle-container*/
+
+/*--pricing card------------*/
+.pricing-table > .box {
+  column-gap: 30px;
+}
+.pricing-table {
+  position: absolute;
+  top: -328px;
+}
+.pricing-table .box .box {
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 28px 0px 24px;
+  /* align-items: center; */
+}
+.pricing-table .pricing-card {
+  background-color: #fdfdfd;
+  border-radius: 30px;
+  /* padding: 24px 28px 48px; */
+}
+
+.pricing-table .pricing-card:hover {
+  /* transform: scale(1.05); */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.pricing-table .pricing-card h3 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Poppins", serif;
+  color: #29313d;
+  margin: 28px auto 16px;
+}
+
+.pricing-table .pricing-card .common-button {
+  margin: 0px;
+}
+
+.pricing-table .pricing-card .base-underline {
+  width: 100%;
+  height: 0.3px;
+  background-color: rgba(27, 17, 87, 0.1);
+  position: relative;
+}
+.pricing-table .pricing-card .base-underline::after {
+  width: 51px;
+  height: 5px;
+  content: "";
+  background-color: rgba(86, 54, 198, 1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+}
+.pricing-table .pricing-card ul {
+  margin: 48px 28px 48px 28px;
+}
+.pricing-table .pricing-card ul li {
+  width: 360px;
+  height: 36px;
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 400px;
+  font-family: "Nunito", serif;
+  display: flex;
+  align-items: center;
+}
+
+/*==============================================
+                  trail part End
+==================================================*/
+/*==============================================
+                  recent part start
+==================================================*/
+.recent .box {
+  column-gap: 48px;
+  margin-top: 388px;
+}
+
+.recent-post,
+.follow-us {
+  padding-top: 120px;
+}
+.recent .recent-post {
+  width: 912px;
+  height: 849px;
+  background-color: red;
+}
+.recent .recent-post .recent-posts-container .recent-post {
+  padding-top: 0;
+  margin-top: 68px;
+}
+.recent .follow-us {
+  width: 450px;
+  height: 684px;
+  background-color: rgb(0, 38, 255);
+}
+
+.recent .common-title h2 {
+  text-align: left;
+}
+.recent .recent-post .recent-posts-container .recent-post {
+  display: flex;
+  column-gap: 30px;
+}
+.recent .recent-post .recent-posts-container .recent-post .common-title h2 {
+  width: 552px;
+  font-size: 36px;
+  color: #29313d;
+  text-align: left;
+}
+
+.recent-posts-container .recent-post-image img {
+  width: 330px;
+  height: 342px;
+  border-radius: 40px;
+}
+/*-==============================================
+                  recent part End
+==================================================-*/
