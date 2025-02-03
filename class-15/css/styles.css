@@ -625,11 +625,16 @@ svg {
 /*==============================================
                   trail part start
 ==================================================*/
+
+.trail {
+  background-color: #f4fdfe;
+}
 .trail .container {
   position: relative;
 }
 .trail .header {
-  background-color: #f4fdfe;
+  /* width: ; */
+
   padding-top: 120px;
   padding-bottom: 388px;
 }
