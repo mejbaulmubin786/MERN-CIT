@@ -924,6 +924,7 @@ svg {
 .project {
   background-color: #f8fdfe;
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .project .container {
@@ -956,4 +957,60 @@ svg {
 
 /*-============================================== 
                   project part End
+==================================================-*/
+
+/*-============================================== 
+                  footer part End
+==================================================-*/
+
+footer .container {
+  margin-top: 140px;
+  margin-bottom: 80px;
+}
+.container .left-footer-content img {
+  margin-bottom: 44px;
+}
+
+footer .common-title p {
+  text-align: left;
+  width: 449px;
+}
+footer .box {
+  column-gap: 212px;
+}
+footer h2 {
+  border-radius: 18px;
+  font-family: "Open Sans", serif;
+  color: #29313d;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 48px;
+}
+
+footer ul li {
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 400px;
+  font-family: "Nunito", serif;
+  display: flex;
+  align-items: center;
+  padding: 0, 30px, 0;
+  white-space: nowrap;
+}
+
+.footer-main-container {
+  display: flex;
+}
+footer .container-footer-element {
+  justify-content: space-evenly;
+}
+footer .container-footer-element .common-title div {
+  width: 1000px;
+}
+footer .container-footer-element p {
+  white-space: nowrap;
+}
+
+/*-============================================== 
+                  footer part End
 ==================================================-*/
