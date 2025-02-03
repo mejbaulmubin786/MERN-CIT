@@ -640,8 +640,8 @@
         <section class="banner">
           <div id="banner-box">
             <div class="hero-image-left">
+              <img src="./img/bannerLeft.png" alt="" />
               <img src="./img/hand-left.png" alt="" />
-              <!-- <img src="./img/bannerLeft.png" alt="" /> -->
             </div>
             <div class="hero-containt">
               <div class="hero-middle-img">
@@ -658,8 +658,9 @@
               </div>
             </div>
             <div class="hero-image-right">
-              <!-- <img src="./img/bannerRight.png" alt="" /> -->
-              <img src="./img/hand-right.png" alt="" />
+              <img src="./img/bannerRight.png" alt="" />
+              <!-- <img src="./img/hand-right.png" alt="" /> -->
+              <img src="./img/right-hand-final.png" alt="" />
             </div>
           </div>
         </section>
@@ -1003,13 +1004,16 @@
             </div>
             <div class="images">
               <div class="fb">
-                <img src="./img/recent/f.png" alt="" />
+                <i class="fa-brands fa-facebook-f"></i>
+                <!-- <img src="./img/recent/f.png" alt="" /> -->
               </div>
               <div class="in">
-                <img src="./img/recent/in.png" alt="" />
+                <i class="fa-brands fa-instagram"></i>
+                <!-- <img src="./img/recent/in.png" alt="" /> -->
               </div>
               <div class="you">
-                <img src="./img/recent/y.png" alt="" />
+                <i class="fa-brands fa-youtube"></i>
+                <!-- <img src="./img/recent/y.png" alt="" /> -->
               </div>
             </div>
           </div>
@@ -1067,13 +1071,90 @@
                 </div>
               </div>
             </div>
-            <div class="sidebar"></div>
+            <div class="sidebar common-title">
+              <div class="sidebar-top">
+                <img src="./img/recent/ins.png" alt="" />
+                <h3># Innovate</h3>
+              </div>
+              <div class="box">
+                <div>
+                  <div>
+                    <img src="./img/01-unknown.jpg" alt="" />
+                  </div>
+                  <div>
+                    <img src="./img/mobile.png" alt="" />
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <img src="./img/01-unknown.jpg" alt="" />
+                  </div>
+                  <div>
+                    <img src="./img/mobile.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </main>
+      </div>
+      <div class="container">
+        <div class="common-button">
+          <a href="">View All</a>
+        </div>
       </div>
     </section>
     <!--==============================================
   recent part End
 ==================================================-->
+
+    <!--==============================================
+  project part End
+==================================================-->
+    <section class="project">
+      <div class="container">
+        <div class="main-box">
+          <div class="common-title box">
+            <h2>Start your project with innovate</h2>
+            <div class="common-button">
+              <a href="">View All</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--==============================================
+  project part End
+==================================================-->
+
+    <script>
+      const leftImages = document.querySelectorAll(".hero-image-left img");
+      const rightImages = document.querySelectorAll(".hero-image-right img");
+
+      function animateImages(images) {
+        let topImage = images[0];
+        let bottomImage = images[1];
+        let opacity = 1;
+        let direction = -0.01; // অপাসিটি কমানোর জন্য ঋণাত্মক মান
+
+        setInterval(() => {
+          opacity += direction;
+
+          topImage.style.opacity = opacity;
+          bottomImage.style.opacity = 1 - opacity;
+
+          if (opacity <= 0) {
+            opacity = 0;
+            direction = 0.01; // অপাসিটি বাড়ানোর জন্য ধনাত্মক মান
+          } else if (opacity >= 1) {
+            opacity = 1;
+            direction = -0.01; // অপাসিটি কমানোর জন্য ঋণাত্মক মান
+          }
+        }, 30); // অ্যানিমেশনের গতি পরিবর্তন করতে পারেন (মিলিসেকেন্ডে)
+      }
+
+      animateImages(leftImages);
+      animateImages(rightImages);
+    </script>
   </body>
 </html>
